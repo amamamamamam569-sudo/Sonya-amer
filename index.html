@@ -1,1 +1,48 @@
-<h1>Hello Sonya and Amer</h1>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>عالم عمور وسونيا</title>
+    <style>
+        body { background: linear-gradient(to bottom, #1a1a1a, #4a0000); color: white; text-align: center; font-family: sans-serif; padding: 20px; }
+        .box { border: 2px solid #ff4d4d; border-radius: 20px; padding: 20px; margin: 20px auto; max-width: 500px; background: rgba(0,0,0,0.5); }
+        input { padding: 10px; border-radius: 10px; border: none; width: 80%; margin-bottom: 10px; }
+        button { background: #ff4d4d; color: white; border: none; padding: 12px 30px; border-radius: 50px; cursor: pointer; font-size: 18px; }
+        #secretRoom { display: none; margin-top: 20px; padding: 20px; border: 2px gold dotted; border-radius: 15px; }
+    </style>
+</head>
+<body>
+    <h1>🔥 أهلاً بكم في إمبراطورية عمور وسونيا 🔥</h1>
+
+    <div class="box">
+        <h3>💬 الدردشة العامة</h3>
+        <p>هون الكل بيقدر يشوف ويسلم عليكم!</p>
+        <button onclick="alert('جاري تجهيز السيرفر العام يا وحش!')">افتح الدردشة</button>
+    </div>
+
+    <div class="box">
+        <h3>🔐 الغرفة السرية</h3>
+        <input type="password" id="myPass" placeholder="أدخل كلمة السر السرية">
+        <br>
+        <button onclick="openSecret()">دخول</button>
+        
+        <div id="secretRoom">
+            <h2>💖 غرفة الحب الخاصة 💖</h2>
+            <p>هون بس عمور وسونيا الحلوين!</p>
+        </div>
+    </div>
+
+    <script>
+        function openSecret() {
+            var p = document.getElementById('myPass').value;
+            if (p === "2025") { // هاي كلمة السر هلق
+                document.getElementById('secretRoom').style.display = 'block';
+                alert("نورت غرفتك الخاصة يا بطل!");
+            } else {
+                alert("غلط! سونيا عم تراقبك 😉");
+            }
+        }
+    </script>
+</body>
+</html>
+
