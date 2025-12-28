@@ -2,42 +2,41 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>عالم عمور وسونيا</title>
+    <title>إمبراطورية عمور وسونيا</title>
     <style>
-        body { background: linear-gradient(to bottom, #1a1a1a, #4a0000); color: white; text-align: center; font-family: sans-serif; padding: 20px; }
-        .box { border: 2px solid #ff4d4d; border-radius: 20px; padding: 20px; margin: 20px auto; max-width: 500px; background: rgba(0,0,0,0.5); }
-        input { padding: 10px; border-radius: 10px; border: none; width: 80%; margin-bottom: 10px; }
-        button { background: #ff4d4d; color: white; border: none; padding: 12px 30px; border-radius: 50px; cursor: pointer; font-size: 18px; }
-        #secretRoom { display: none; margin-top: 20px; padding: 20px; border: 2px gold dotted; border-radius: 15px; }
+        body { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: white; text-align: center; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 20px; }
+        .box { border: 2px solid #00d2ff; border-radius: 20px; padding: 20px; margin: 20px auto; max-width: 500px; background: rgba(0,0,0,0.7); box-shadow: 0 0 20px #00d2ff; }
+        iframe { width: 100%; height: 350px; border: none; border-radius: 15px; background: white; }
+        input { padding: 12px; border-radius: 25px; border: none; width: 80%; margin-bottom: 15px; text-align: center; }
+        button { background: #00d2ff; color: #121212; border: none; padding: 12px 30px; border-radius: 50px; cursor: pointer; font-size: 18px; font-weight: bold; }
+        #secretRoom { display: none; margin-top: 25px; padding: 20px; border: 3px #ff0080 double; border-radius: 15px; background: rgba(255, 0, 128, 0.1); }
     </style>
 </head>
 <body>
-    <h1>🔥 أهلاً بكم في إمبراطورية عمور وسونيا 🔥</h1>
+    <h1>✨ إمبراطورية عمور وسونيا ✨</h1>
 
     <div class="box">
-        <h3>💬 الدردشة العامة</h3>
-        <p>هون الكل بيقدر يشوف ويسلم عليكم!</p>
-        <button onclick="alert('جاري تجهيز السيرفر العام يا وحش!')">افتح الدردشة</button>
+        <h3>💬 الدردشة العامة (لايف)</h3>
+        <iframe src="https://www3.cbox.ws/box/?boxid=3534571&boxtag=v7m8r6" allow="autoplay"></iframe>
     </div>
 
     <div class="box">
-        <h3>🔐 الغرفة السرية</h3>
-        <input type="password" id="myPass" placeholder="أدخل كلمة السر السرية">
+        <h3>🔐 الغرفة السرية (خاصة)</h3>
+        <input type="password" id="myPass" placeholder="أدخل كلمة السر">
         <br>
         <button onclick="openSecret()">دخول</button>
-        
         <div id="secretRoom">
-            <h2>💖 غرفة الحب الخاصة 💖</h2>
-            <p>هون بس عمور وسونيا الحلوين!</p>
+            <h2 style="color: #ff0080;">💖 غرفة الحب الخاصة 💖</h2>
+            <p>أهلاً بكم في مكانكم السري يا أحلى ثنائي!</p>
         </div>
     </div>
 
     <script>
         function openSecret() {
             var p = document.getElementById('myPass').value;
-            if (p === "2025") { // هاي كلمة السر هلق
+            if (p === "2025") { // كلمة السر الحالية
                 document.getElementById('secretRoom').style.display = 'block';
-                alert("نورت غرفتك الخاصة يا بطل!");
+                alert("نورت الإمبراطورية الخاصة يا ملك!");
             } else {
                 alert("غلط! سونيا عم تراقبك 😉");
             }
@@ -45,4 +44,3 @@
     </script>
 </body>
 </html>
-
