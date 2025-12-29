@@ -4,27 +4,17 @@
     <meta charset="UTF-8">
     <title>إمبراطورية الملك عمور</title>
     <style>
-        body { background: #121212; color: #eee; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 15px; }
-        .admin-header { background: linear-gradient(145deg, #ff0080, #800040); padding: 20px; border-radius: 20px; box-shadow: 0 10px 20px rgba(255, 0, 128, 0.3); margin-bottom: 25px; border: 1px solid #ff0080; }
-        .chat-container { background: #fff; border-radius: 20px; height: 550px; overflow: hidden; border: 5px solid #ff0080; position: relative; }
-        iframe { width: 100%; height: 100%; border: none; }
-        .footer-note { margin-top: 15px; font-size: 14px; color: #ff0080; font-weight: bold; letter-spacing: 1px; }
+        body { background: #000; color: #fff; text-align: center; font-family: sans-serif; margin: 0; padding: 0; overflow: hidden; }
+        .header { background: #ff0080; padding: 10px; font-weight: bold; }
+        /* هاد الكود بيخلي الدردشة تاخد الشاشة كلها */
+        .chat-frame { position: absolute; top: 50px; left: 0; width: 100%; height: calc(100% - 50px); border: none; }
     </style>
 </head>
 <body>
 
-    <div class="admin-header">
-        <h1 style="margin:0; font-size: 24px;">👑 إمبراطورية الملك عمور 👑</h1>
-        <p style="margin:5px 0 0; opacity: 0.8;">دردشة عامة - أهلاً بالجميع</p>
-    </div>
+    <div class="header">👑 إمبراطورية الملك عمور 👑</div>
 
-    <div class="chat-container">
-        <iframe src="https://www3.cbox.ws/box/?boxid=954201&boxtag=8v6z2r&nm=الملك_عمور"></iframe>
-    </div>
-
-    <div class="footer-note">
-        جاري استقبال الزوار... ✍️✨
-    </div>
+    <iframe class="chat-frame" src="https://www.cbox.ws/box/?boxid=954201&boxtag=8v6z2r&nm=الملك_عمور"></iframe>
 
 </body>
 </html>
